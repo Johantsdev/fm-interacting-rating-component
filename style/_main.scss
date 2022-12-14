@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: $fs-normal;
+    font-family: $ff-main;
+    background-color: $neutralVeryDarkBlue;
+    color: $neutralLightGrey;
+}
+
+h2, .submit {
+    color: $neutralWhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min(70vw, 350px);
+    height: 325px;
+    margin: 200px auto;
+    padding: 2rem;
+    border-radius: 15px ;
+    background-color: $neutralDarkBlue;
+}
+
+.container-second {
+    display: none;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lighten($color: $neutralDarkBlue, $amount: 3);
+}
+
+.selected {
+    color: $neutralWhite;
+    background-color: $primaryOrange !important;
+
+}
+
+
+button { 
+    border: none;
+    color: inherit;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $neutralLightGrey;
+        color: $neutralWhite;
+    }
+
+    &:active {
+        background-color: $primaryOrange;
+    }
+}
+
+.rating-posibilities {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.submit {
+    padding: 0.7rem 0;
+    background-color: $primaryOrange;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: 700 ;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $neutralWhite;
+        color: $primaryOrange;
+    }
+
+}
+.selected-rate-display {
+    background-color: lighten($color: $neutralDarkBlue, $amount: 3);
+    color: $primaryOrange;
+    padding: 0.5rem 0.7rem 0.3rem;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+p {
+    line-height: 1.3rem;
+}
+p:last-child {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.container-second h2 {
+    text-align: center;
+}
